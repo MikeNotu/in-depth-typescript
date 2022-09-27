@@ -1,6 +1,8 @@
 import ArraysComponent from "./components/ArraysComponent";
 import EnumsComponent from "./components/EnumsComponent";
+import FunctionsComponent from "./components/FunctionsComponent";
 import InterfacesComponent from "./components/InterfacesComponent";
+import ObjectsComponent from "./components/ObjectsComponent";
 
 function App() {
   return (
@@ -11,6 +13,10 @@ function App() {
       <EnumsComponent />
       <h1>Arrays</h1>
       <ArraysComponent />
+      <h1>Objects</h1>
+      <ObjectsComponent />
+      <h1>Functions</h1>
+      <FunctionsComponent />
     </div>
   );
 }
