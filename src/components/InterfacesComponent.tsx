@@ -9,7 +9,12 @@ const InterfacesComponent = () => {
     id: 1,
   };
 
-  return <div>{JSON.stringify(Mike)}</div>;
+  return (
+    <div>
+      <p>Interface used to create object.</p>
+      <p>{JSON.stringify(Mike)}</p>
+    </div>
+  );
 };
 
 export default InterfacesComponent;
