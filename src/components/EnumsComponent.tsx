@@ -36,6 +36,19 @@ const EnumsComponent = () => {
   // This Won't work because it's a read only property, because "as const" was added.
   // FifthPrices.applePrice = 100;
 
+  enum Direction {
+    Up,
+    Down,
+    Left,
+    Right,
+  }
+  const enum constDirection {
+    Up,
+    Down,
+    Left,
+    Right,
+  }
+
   return (
     <div>
       <p>{`${JSON.stringify(FirstPrices)}`}</p>
@@ -45,6 +58,17 @@ const EnumsComponent = () => {
       <p>{`${ThirdPrices.applePrice} ${ThirdPrices.bananaPrice} ${ThirdPrices.peachPrice}`}</p>
       <p>{`${FourthPrices.applePrice} ${FourthPrices.bananaPrice} ${FourthPrices.peachPrice}`}</p>
       <p>{`${FifthPrices.applePrice} ${FifthPrices.bananaPrice} ${FifthPrices.peachPrice}`}</p>
+      <p>{`${JSON.stringify(Direction)}`}</p>
+      <p>TypeScript compiles regular enum to JavaScript objects.</p>
+      <p>
+        Because there is no JavaScript object that associates with const enum is
+        generated at run time, it is not possible to loop over the const enum
+        values.
+      </p>
+      {/* This won't work */}
+      {/* <p>{`${JSON.stringify(constDirection)}`}</p> */}
+      <p>{`${JSON.stringify(Direction.Up)}`}</p>
+      <p>{`${JSON.stringify(constDirection.Up)}`}</p>
     </div>
   );
 };

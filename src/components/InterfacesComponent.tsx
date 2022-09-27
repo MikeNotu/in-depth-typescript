@@ -1,4 +1,4 @@
-const InterfaceComponent = () => {
+const InterfacesComponent = () => {
   interface User {
     name: string;
     id: number;
@@ -12,4 +12,4 @@ const InterfaceComponent = () => {
   return <div>{JSON.stringify(Mike)}</div>;
 };
 
-export default InterfaceComponent;
+export default InterfacesComponent;
