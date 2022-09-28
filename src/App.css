@@ -1,13 +1,26 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.only-button {
+.other-button {
   width: 12em;
   height: 3em;
   border-radius: 30em;
   /* background-color: "#22e3d3"; */
   background-color: #c9e5c4;
   color: #2c6d57;
+  border-style: none;
+  font-weight: 800;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0.2em 0.2em 0.4em #a2a2a2;
+}
+
+.source-button {
+  width: 12em;
+  height: 3em;
+  border-radius: 30em;
+  /* background-color: "#22e3d3"; */
+  background-color: #c4cde5;
+  color: #2c3d6d;
   border-style: none;
   font-weight: 800;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

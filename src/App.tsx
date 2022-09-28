@@ -15,12 +15,21 @@ function App() {
         This Website was created in order to practice Typescript and showcase
         some examples.
       </h1>
-      <h2>
+      <h3>
         For more Visual oriented projects please check the other projects here:{" "}
         <a href="https://mikenotu.github.io/front-portfolio/" target="_self">
-          <button className="only-button">OTHER PROJECTS</button>
+          <button className="other-button">OTHER PROJECTS</button>
         </a>
-      </h2>
+      </h3>
+      <h3>
+        To see the Source Code press this button:{" "}
+        <a
+          href="https://github.com/MikeNotu/in-depth-typescript/blob/master/src/App.tsx"
+          target="_self"
+        >
+          <button className="source-button">SOURCE CODE</button>
+        </a>
+      </h3>
       <h1>Interfaces</h1>
       <InterfacesComponent />
       <h1>Enums</h1>
