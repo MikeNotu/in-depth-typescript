@@ -1,4 +1,4 @@
-const GenericsComponent = () => {
+const GenericsComponent: React.FC = () => {
   const last = <T,>(arr: T[]): T => {
     return arr[arr.length - 1];
   };
@@ -45,6 +45,31 @@ const GenericsComponent = () => {
     age: 15,
   });
 
+  interface Tab<T> {
+    id: number;
+    position: string;
+    data: T;
+  }
+
+  type NumberTab = Tab<number>;
+  type StringTab = Tab<string>;
+
+  const obj1: NumberTab = {
+    id: 1,
+    position: "Dev",
+    data: 121,
+  };
+
+  const obj2: StringTab = {
+    id: 2,
+    position: "FrontEnd",
+    data: "SSr",
+  };
+
+  function raiseError(message: string): never {
+    throw new Error(message);
+  }
+
   return (
     <div>
       <p>Basic Generics use case.</p>
@@ -55,12 +80,25 @@ const GenericsComponent = () => {
       <p>{v}</p>
       <p>{v2}</p>
       <p>{v3}</p>
+      <br />
       <p>Objects must contain specific properties.</p>
       <p>{JSON.stringify(v4)}</p>
       <p>
         Objects must contain specific properties, but can have more properties.
       </p>
       <p>{JSON.stringify(v5)}</p>
+      <br />
+      <p>Creating different Types by reusing interface.</p>
+      <p>{JSON.stringify(obj1)}</p>
+      <p>{JSON.stringify(obj2)}</p>
+      <p>Never Type.</p>
+      <button
+        onClick={() => {
+          raiseError("This is an Error Example");
+        }}
+      >
+        On Click, Throw an Error.
+      </button>
     </div>
   );
 };
