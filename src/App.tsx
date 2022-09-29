@@ -7,6 +7,7 @@ import ObjectsComponent from "./components/ObjectsComponent";
 import TypesComponent from "./components/TypesComponent";
 import UnknownComponent from "./components/UnknownComponent";
 import "../src/App.css";
+import UtilitytypesComponent from "./components/UtilitytypesComponent";
 
 function App() {
   return (
@@ -46,6 +47,8 @@ function App() {
       <GenericsComponent />
       <h1>Unknown</h1>
       <UnknownComponent />
+      <h1>Utility</h1>
+      <UtilitytypesComponent />
     </div>
   );
 }
