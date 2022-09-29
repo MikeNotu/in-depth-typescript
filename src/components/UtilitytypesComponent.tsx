@@ -54,6 +54,21 @@ const UtilitytypesComponent = () => {
   let JanesDrink: Exclude<AvailableDrinks, DrinksJaneDoesntLike>;
   JanesDrink = "Lemonade";
 
+  // Non Nullable makes it so that the value can't be null or undefined
+
+  function paintStarship(id: number, color: "blue" | "red" | "green") {
+    return {
+      id,
+      color,
+    };
+  }
+
+  type PaintStarshipReturn = ReturnType<typeof paintStarship>;
+
+  let NewStarship: PaintStarshipReturn;
+
+  NewStarship = { id: 11, color: "blue" };
+
   return (
     <div>
       <p>PARTIAL</p>
@@ -73,6 +88,10 @@ const UtilitytypesComponent = () => {
       <p>{JSON.stringify(NameOnly)}</p>
       <p>EXCLUDE</p>
       <p>{StringOrNumber}</p>
+      <p>{JohnsDrink}</p>
+      <p>{JanesDrink}</p>
+      <p>ReturnType</p>
+      <p>{JSON.stringify(NewStarship)}</p>
     </div>
   );
 };
