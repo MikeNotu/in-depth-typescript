@@ -17,7 +17,7 @@ function App() {
         some examples.
       </h1>
       <h3>
-        For more Visual oriented projects please check the other projects here:{" "}
+        For more Visual oriented projects please check other projects here:{" "}
         <a href="https://mikenotu.github.io/front-portfolio/" target="_self">
           <button className="other-button">OTHER PROJECTS</button>
         </a>
