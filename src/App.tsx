@@ -8,6 +8,7 @@ import TypesComponent from "./components/TypesComponent";
 import UnknownComponent from "./components/UnknownComponent";
 import "../src/App.css";
 import UtilitytypesComponent from "./components/UtilitytypesComponent";
+import TypeAliasComponent from "./components/TypeAliasComponent";
 
 function App() {
   return (
@@ -49,6 +50,8 @@ function App() {
       <UnknownComponent />
       <h1>Utility</h1>
       <UtilitytypesComponent />
+      <h1>TypeAliasComponent</h1>
+      <TypeAliasComponent />
     </div>
   );
 }
